@@ -1,12 +1,170 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" src="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" src="nor`malize.css">
     <link href="styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <title>Static Comp 3</title>
   </head>
   <body>
+    <section class="nav-bar--section">
+      <article class="nav-bar--article-1 nav-bar--article">
+        <img class="nav-bar--headshot" src="images/headshot.jpg">
+        <h5 class="nav-bar--name">Chris Chateau<img class="nar-bar--down-arrow" src="images/down-arrow-white.svg"></h5>
+      </article>
+      <article class="nav-bar--article-2 nav-bar--article">
+        <h5>Main</h5>
+        <ul>
+          <li><img src="images/home-white.svg">HOME</li>
+          <li><img src="images/jobs-white.svg">JOBS</li>
+          <li><img src="images/resumes-white.svg">RESUMES</li>
+          <li><img src="images/tasks-white.svg">TASKS</li>
+          <li><img src="images/calendar-white.svg">CALENDAR</li>
+        </ul>
 
+      </article>
+      <article class="nav-bar--article-3 nav-bar--article">
+        <h5>Admin</h5>
+        <ul>
+          <li><img src="images/users-white.svg">
+          USERS</li>
+          <li><img src="images/locations-white.svg">LOCATIONS</li>
+          <li><img src="images/workflow-white.svg">WORKFLOWS</li>
+          <li><img src="images/job-boards-white.svg">JOB BOARDS</li>
+          <li><img src="images/social-white.svg">SOCIAL</li>
+        </ul>
+      </article>
+      <article class="nav-bar--article-4">
+        <h5>Categories</h5>
+          <label class="container">
+            <input type="checkbox" checked="checked">Administrative
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">
+            <input type="checkbox">Design
+            <span class="checkmark-2"></span>
+          </label>
+
+          <label class="container">
+            <input type="checkbox">Executive
+            <span class="checkmark-3"></span>
+          </label>
+
+          <label class="container">
+            <input type="checkbox">Human Resources
+            <span class="checkmark-4"></span>
+          </label>
+      </article>
+    </section>
+
+    <header class="page-header">
+      <section class="top-search-bar">
+        <div class="top-search-bar-1 top-search top-search-hover">
+          <i class="fas fa-bars top-search-hover"></i>
+        </div>
+        <div class="top-search-bar-2 top-search">
+          <img class="mag-glass" src="images/mag-glass.svg"><h3>Search for a job, task or resume</h3>
+        </div>
+        <div class="top-search-bar-3 top-search top-search-hover">
+          <i class="fas fa-user-plus top-search-hover"></i>
+        </div>
+        <div class="top-search-bar-4 top-search top-search-hover">
+          <i class="fas fa-calendar-plus top-search-hover"></i>
+        </div>
+        <div class="top-search-bar-5 top-search top-search-hover">
+          <i class="fas fa-th top-search-hover"></i>
+        </div>
+      </section>
+      <section class="customer-service-section">
+        <article class="cs-text">
+          <h2>Customer Service Representative</h2>
+          <p><img class="cs-icon" src="images/locations.svg">San Francisco, CA 
+            <span class="cs-dash-spacing">-</span>
+            <span class="cs-text--blue">Preview this post</span>
+          </p>
+        </article>
+        <article class="cs-buttons">
+          <div class="cs-buttons--open-border">
+            <h2 class="cs-buttons--open"><img class="cs-buttons--green-dot"src="images/green-dot.png">OPEN</h2>
+          </div>
+          <button class="cs-buttons--bookmarks"></button>
+          <button class="cs-buttons--pen"></button>
+          <button class="cs-buttons--trash"></button>
+        </article>
+        <nav class="cs-nav">
+          <h4>SUMMARY</h4>
+          <h4>APPLICANTS</h4>
+          <h4>JOB BOARD</h4>
+          <h4>INTERVIEWS</h4>
+          <h4>ACTIVITY</h4>
+          <h4>BROADCAST</h4>
+          <h4>NOTIFICATIONS</h4>
+        </nav>
+      </section>
+    </header>
+    <main class="page-main">
+      <div class="flex-wrapper">
+        <div class="single-chart">
+          <svg viewbox="0 0 36 36" class="circular-chart orange">
+            <path class="circle-bg"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path class="circle"
+              stroke-dasharray="30, 100"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="-18" y="-17" class="percentage p-number">912</text>
+            <text x="-18" y="-12" class="percentage">APPLICANTS</text> 
+          </svg>
+        </div>
+        <div class="single-chart">
+          <svg viewbox="0 0 36 36" class="circular-chart green">
+            <path class="circle-bg"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path class="circle"
+              stroke-dasharray="60, 100"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="-18" y="-17" class="percentage p-number">1,546</text>
+            <text x="-18" y="-12" class="percentage">INTERVIEWS</text>          
+          </svg>
+        </div>
+        <div class="single-chart">
+          <svg viewbox="0 0 36 36" class="circular-chart blue">
+            <path class="circle-bg"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path class="circle"
+              stroke-dasharray="90, 100"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="-18" y="-17" class="percentage p-number">3,154</text>
+            <text x="-18" y="-12" class="percentage">FORWARDS</text> 
+          </svg>
+        </div>
+      </div>
+          <img class="monthly-graph-img" src="images/monthly-graph.png">
+          <button class="graph-sec--button graph-sec--button-left">
+            TOTALS - Out of 5,231 views
+          </button>
+          <button class="graph-sec--button graph-sec--button-right">
+            APPLICANTS/DAY
+          </button>
+    </main>
   </body>
 </html>
