@@ -19,7 +19,7 @@ h5 {
   color: #a4afc1;
   font-size: 1rem;
   opacity: .5;
-  margin: 30px 0 0 20px;
+  margin: 30px 0 0 30px;
 }
 
 ul {
@@ -29,8 +29,9 @@ ul {
 li {
   opacity: .6;
   list-style-type: none;
-  padding: .5rem;
-
+  padding-top: .2rem;
+  padding-bottom: .8rem;
+  padding-left: 1rem;
 }
 
 li:hover,
@@ -40,6 +41,7 @@ li > img:hover  {
 
 li:hover {
   border-left: 2px solid #48a3f3;
+  background-color: #2d384a;
 }
 
 li > img {
@@ -293,29 +295,35 @@ h4:hover {
   
 }
 
+.nav-users--icon {
+  margin-right: 10px;
+}
+
 .nav-bar--article-3 {
   
 }
 
-.nav-bar--article-4 {
-  
+.nav-bar--checkbox-list > li {
+  opacity: 1;
 }
 
-.checkmark {
-  background-color: #eee;
+.nav-bar--checkbox-list > li:hover {
+  border: none;
 }
 
-.checkmark-2 {
-  
-
+.nav-bar--checkbox {
+  position: relative;
+  top: 8px;
 }
 
-.checkmark-3 {
-  background-color: #eee;
+h6 {
+  display: inline;
+  opacity: .7;
+  font-size: .8rem;
 }
 
-.checkmark-4 {
-  
+.nav-bar--yellow-checkbox {
+  margin-right: 10px;
 }
 
 .nav-bar--name {
@@ -343,12 +351,10 @@ h4:hover {
 .monthly-graph-img {
   display: inline;
   height: 240px;
-  position: relative;
+/*  position: relative;
   bottom: 220px;
-  left: 250px;
-
+  left: 250px;*/
 }
-
 
 /*Animated charts*/
 
@@ -416,6 +422,20 @@ h4:hover {
   font-size: .5rem;
 }
 
+.graph-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 2rem;
+}
+
+.graph-sec--buttons {
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
 .graph-sec--button {
   background-color: #fafafc;
   border: 3px solid #d3dae1;
@@ -424,18 +444,18 @@ h4:hover {
   font-size: 1.1rem;
   color: #5b6677;
   padding: 10px;
-  margin-top: 40px;
-  display: inline;
 }
 
 .graph-sec--button-left {
-  float: left;
-  margin-left: 210px;
+/*  float: left;
+  margin-left: 210px;*/
+  flex-basis: 22rem;
 }
 
 .graph-sec--button-right {
-  float: right;
-  margin-right: 140px;
+/*  float: right;
+  margin-right: 140px;*/
+  /*flex-basis: 8rem;*/
 }
 
 /*left section: #354052
