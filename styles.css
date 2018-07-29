@@ -500,11 +500,11 @@ h6 {
 }
 
 .main-divider {
+  margin-bottom: 60px;
   margin-left: 48px;
   margin-right: 40px;
   display: flex;
-  /*justify-content: space-around;*/
-  /*width: 95%;*/
+
 }
 
 .main-divider-left,
@@ -559,7 +559,7 @@ h6 {
   margin: 3rem 48px;
   display: grid;
   grid-gap: 5%;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
 }
 
 .job-description-social--section h4 {
@@ -729,7 +729,7 @@ h6 {
 
 .social-row {
   color: white;
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
   align-items: center;
 }
@@ -873,6 +873,107 @@ h6 {
   color: white;
   padding-left: 4px;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 1380px) {
+
+    .job-description-social--section {
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .job-description {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .social {
+      grid-column: 1;
+      grid-row: 2;
+      margin: auto;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 3.5rem 1fr 3px 1fr 3px 1fr;
+    }
+
+    .social-media--text {
+      text-align: center;
+      font-size: .8rem;
+      padding-top: 4px;
+    }
+
+    .copy-text-button h4{
+      padding-right: 5px;
+    }
+
+    .social-row-1 {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .social-row-2 {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .social-row-3 {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    .social-row-4 {
+      grid-column: 1 / 4;
+      grid-row: 2;
+    }
+
+    .social-row-5 {
+      grid-column: 1 / 4;
+      grid-row: 3;
+    }
+
+    .social-row-6 {
+      grid-column: 1 / 4;
+      grid-row: 4;
+    }
+
+    .social-row-7 {
+      grid-column: 1 / 4;
+      grid-row: 5;
+    } 
+
+    .social-row-8 {
+      grid-column: 1 / 4;
+      grid-row: 6;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+  
+  body {
+    grid-template-areas: 
+      'header'
+      'main'; 
+    grid-template-columns: 1fr;
+  }
+  .nav-bar--section {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 890px) {
+
+}
+
+@media screen and (max-width: 770px) {
+  
+  .social-media--text {
+    display: none;
+  }
+
+  .social-icons {
+    margin: auto;
+  }
+
 }
 /*left section: #354052
 icon color: #a4afc1 */
