@@ -69,7 +69,6 @@ input {
 }
 
 .page-header {
-  /*height: 18rem;*/
   grid-area: header;
 }
 
@@ -77,13 +76,21 @@ input {
   display: grid;
   height: 6rem;
   grid-template-columns: 6.5rem 1fr 6.5rem 6.5rem 6.5rem;
-  /*grid-template-rows: 1fr;*/
-  /*width: 100%;*/
 }
 
 .fas {
   font-size: 25px;
   color: #a4afc1;
+}
+
+.fa-bars {
+  position: relative;
+  padding-right: 6px;
+}
+
+.fa-caret-left {
+  color: #48a3f3;
+  margin-right: 4px;
 }
 
 .top-search-sections {
@@ -454,10 +461,10 @@ h6 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 85% 15%;
   margin-left: 1.1rem;
+  margin-top: 1rem;
 }
 
 .monthly-graph-img {
-  /*display: block;*/
   width: 85%;
   grid-column: 2;
   grid-row: 1;
@@ -841,12 +848,25 @@ h6 {
   background-color: white;
   width: 80%;
   height: 3rem;
+  display: flex;
+  align-content: center;
+}
+
+.copy-text-field p {
+  font-weight: 700;
+  padding-top: 14px;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
 }
 
 .copy-text-button {
   background-color: #67b8bf;
   width: 20%;
   height: 3rem;
+  cursor: pointer;
 }
 
 .copy-text-button h4{
