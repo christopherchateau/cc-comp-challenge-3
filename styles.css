@@ -292,7 +292,7 @@ h4 {
 
 .fa-caret-sum-left,
 .fa-caret-sum-right {
-  color: white;
+  color: transparent;
   margin: 0;
   display: inline;
   position: relative;
@@ -862,7 +862,7 @@ h6 {
 
 .copy-text-button h4{
   color: white;
-  padding-left: 4px;
+  padding-left: 12px;
   font-size: 1rem;
 }
 
@@ -1117,7 +1117,7 @@ h6 {
   }
 
   .customer-service-section {
-    grid-template-rows: 6.5rem 5rem 3rem;
+    grid-template-rows: 7rem 5rem 3rem;
   }
 
   .cs-text {
