@@ -207,7 +207,7 @@ p {
   width: 45px;
 }
 
-.cs-buttons--bookmarks:hover 
+.cs-buttons--bookmarks:hover, 
 .cs-buttons--pen:hover,
 .cs-buttons--trash:hover {
   background-color: #48a3f3;
@@ -523,7 +523,7 @@ h6 {
   background-size: 20px;
   border: 2px solid #d3dae1;
   border-radius: 50%;
-  height: 40px;
+  height: 35px;
   margin: 0 10px;
   position: relative;
   top: 15px;
@@ -535,6 +535,7 @@ h6 {
   background-color: #5b6677;
   background-image: url(images/down-arrow-white.svg);
   cursor: pointer;
+  transition: all .5s ease-in-out;
 }
 
 /*JOB DESCRIPTION / SOCIAL*/

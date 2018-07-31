@@ -5,14 +5,18 @@
     <link rel="stylesheet" type="text/css" src="normalize.css">
     <link href="styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+          crossorigin="anonymous">
     <title>Static Comp 3</title>
   </head>
   <body>
     <section class="nav-bar--section">
       <article class="nav-bar--article-1 nav-bar--article">
-        <img class="nav-bar--headshot" src="images/headshot.jpg">
-        <h5 class="nav-bar--name">Chris Chateau<img class="nar-bar--down-arrow" src="images/down-arrow-white.svg"></h5>
+        <img class="nav-bar--headshot" aria-label="candidate headshot" src="images/headshot.jpg">
+        <h5 class="nav-bar--name" aria-label="candidate name">Chris Chateau
+          <img class="nar-bar--down-arrow" src="images/down-arrow-white.svg">
+        </h5>
       </article>
       <article class="nav-bar--article-2 nav-bar--article">
         <h5>Main</h5>
@@ -27,8 +31,7 @@
       <article class="nav-bar--article-3 nav-bar--article">
         <h5>Admin</h5>
         <ul>
-          <li><img class="nav-users--icon" src="images/users-white.svg">
-          USERS</li>
+          <li><img class="nav-users--icon" src="images/users-white.svg">USERS</li>
           <li><img src="images/locations-white.svg">LOCATIONS</li>
           <li><img src="images/workflow-white.svg">WORKFLOWS</li>
           <li><img src="images/job-boards-white.svg">JOB BOARDS</li>
@@ -38,17 +41,29 @@
       <article class="nav-bar--article-4">
         <h5>Categories</h5>
         <ul class="nav-bar--checkbox-list">
-          <li><img class="nav-bar--checkbox nav-bar--yellow-checkbox" src="images/checkbox-yellow.png">
+          <li>
+            <img class="nav-bar--checkbox nav-bar--yellow-checkbox" 
+                   src="images/checkbox-yellow.png">
           <h6>Administrative</h6></li>
-          <li><img class="nav-bar--checkbox" src="images/checkbox-blue.png"><h6>Design</h6></li>
-          <li><img class="nav-bar--checkbox" src="images/checkbox-red.png"><h6>Executive</h6></li>
-          <li><img class="nav-bar--checkbox" src="images/checkbox-green.png"><h6>Human Resources</h6></li>
+          <li>
+            <img class="nav-bar--checkbox" src="images/checkbox-blue.png">
+            <h6>Design</h6>
+          </li>
+          <li>
+            <img class="nav-bar--checkbox" src="images/checkbox-red.png">
+            <h6>Executive</h6>
+          </li>
+          <li>
+            <img class="nav-bar--checkbox" src="images/checkbox-green.png">
+            <h6>Human Resources</h6>
+          </li>
         </ul>
       </article>
     </section>
     <header class="page-header">
       <section class="top-search-bar">
-        <div class="top-search-bar-1 top-search-sections top-search-hover">
+        <div class="top-search-bar-1 top-search-sections top-search-hover"
+             aria-label="toggle navigation menu">
           <i class="fas fa-caret-left"></i>
           <i class="fas fa-bars top-search-hover"></i>
         </div>
@@ -56,29 +71,35 @@
           <i class="fas fa-search mag-glass"></i>
           <h3 class="search-placeholder">Search for a job, task or resume</h3>
         </div>
-        <div class="top-search-bar-3 top-search-sections top-search-hover">
+        <div class="top-search-bar-3 top-search-sections top-search-hover"
+             aria-label="create account">
           <i class="fas fa-user-plus top-search-hover"></i>
         </div>
-        <div class="top-search-bar-4 top-search-sections top-search-hover">
+        <div class="top-search-bar-4 top-search-sections top-search-hover"
+             aria-label="add to list of saved job listings">
           <i class="fas fa-calendar-plus top-search-hover"></i>
         </div>
-        <div class="top-search-bar-5 top-search-sections top-search-hover">
+        <div class="top-search-bar-5 top-search-sections top-search-hover"
+             aria-label="open menu">
           <i class="fas fa-th top-search-hover"></i>
         </div>
       </section>
       <section class="customer-service-section">
         <article class="cs-text">
           <h2>Customer Service Representative</h2>
-          <p><img class="cs-icon" src="images/locations.svg">Denver, CO
+          <p>
+            <img class="cs-icon" src="images/locations.svg">Denver, CO
             <span class="cs-dash-spacing">-</span>
             <span class="cs-text--blue">Preview this post</span>
           </p>
         </article>
         <article class="cs-buttons">
-          <h2 class="cs-buttons--open"><img class="cs-buttons--green-dot"src="images/green-dot.png">OPEN</h2>
-          <button class="cs-buttons--bookmarks"></button>
-          <button class="cs-buttons--pen"></button>
-          <button class="cs-buttons--trash"></button>
+          <h2 class="cs-buttons--open">
+            <img class="cs-buttons--green-dot"src="images/green-dot.png">OPEN
+          </h2>
+          <button class="cs-buttons--bookmarks" aria-label="save to bookmarks"></button>
+          <button class="cs-buttons--pen" aria-label="edit job listing"></button>
+          <button class="cs-buttons--trash" aria-label="delete job listing"></button>
         </article>
         <nav class="cs-nav">
           <i class="fas fa-caret-left fa-caret-sum-left"></i>
@@ -148,18 +169,13 @@
             </svg>
           </div>
         </div>
-        <button class="graph-sec--button-left">
-          TOTALS - Out of 5,231 views
-        </button>
+        <button class="graph-sec--button-left">TOTALS - Out of 5,231 views</button>
         <img class="monthly-graph-img" src="images/monthly-graph.png">
-        <button class="graph-sec--button-right">
-          APPLICANTS/DAY
-        </button>
-
+        <button class="graph-sec--button-right">APPLICANTS/DAY</button>
       </section>  
       <aside class="main-divider">
         <div class="main-divider-left"></div>
-        <button class="main-divider--arrow"></button>
+        <button class="main-divider--arrow" aria-label="hide charts from page"></button>
         <div class="main-divider-right"></div>
       </aside>
       <section class="job-description-social--section">
@@ -193,7 +209,7 @@
           </div>
           <div class="job-description--1b jd-right-section">
             <aside class="job-description--edit-box">
-                  <img class="jd-pen-icon"src="images/pen-white.svg">EDIT  
+              <img class="jd-pen-icon" aria-label="edit job posting" src="images/pen-white.svg">EDIT  
             </aside>
           </div>
           <div class="job-description--2b jd-right-section">
@@ -223,16 +239,21 @@
         </article>
         <article class="social">
           <div class="social-row social-row-1">
-            <img class="social-icons" src="images/facebook.svg"><h4 class="social-media--text">Post To Facebook</h4>
+            <img class="social-icons" src="images/facebook.svg">
+            <h4 class="social-media--text">Post To Facebook</h4>
           </div>
           <div class="social-row social-row-2">
-            <img class="social-icons " src="images/twitter.svg"><h4 class="social-media--text">Tweet this Job</h4>
+            <img class="social-icons " src="images/twitter.svg">
+            <h4 class="social-media--text">Tweet this Job</h4>
           </div>
           <div class="social-row social-row-3">
-            <img class="social-icons" src="images/linkedin.svg"><h4 class="social-media--text">Post To Linkedin</h4>
+            <img class="social-icons" src="images/linkedin.svg">
+            <h4 class="social-media--text">Post To Linkedin</h4>
           </div>
           <div class="social-row social-row-bottom social-row-4">
-            <div class="social-row-4a"><h4><img class="social-bottom-icons"src="images/globe.svg">Link to this Job</h4></div>
+            <div class="social-row-4a">
+              <h4><img class="social-bottom-icons"src="images/globe.svg">Link to this Job</h4>
+            </div>
             <div class="social-row-4b">
               <p>Gouda cheddar cheese and biscuits feta dolcelatte babybel pecorino cheese and biscuits.</p>
             </div>
@@ -248,13 +269,20 @@
               <p>When the cheese comes out everybody's happy cheeseburger parmesan taleggio.</p>
             </div>
             <div class="social-row-6c">
-              <aside class="copy-text-field"><p>&ltscript type&gt="text/javascript" &lt/script&gt</p></aside>
+              <aside class="copy-text-field">
+                <p>&ltscript type&gt="text/javascript" &lt/script&gt</p>
+              </aside>
               <button class="copy-text-button"><h4>Copy</h4></button>
             </div>
           </div>
           <div class="social-row-bottom social-row-7"></div>
           <div class="social-row-bottom social-row-8">
-            <div class="social-row-8a"><h4><img class="social-bottom-icons"src="images/paper-plane.svg">Upload Resumes by Email</h4></div>
+            <div class="social-row-8a">
+              <h4>
+                <img class="social-bottom-icons" 
+                       src="images/paper-plane.svg">Upload Resumes by Email
+              </h4>
+            </div>
             <div class="social-row-8b">
               <p>Pepper jack emmental red leicester. Hard cheese ricotta fromage chalk and cheese smelly. </p>
             </div>
