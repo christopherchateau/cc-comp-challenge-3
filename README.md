@@ -5,6 +5,8 @@ The static comp challenge is a series of three challenges to keep you working th
 
 Website is responsive across various browsers, devices and screen sizes.
 
+View the site here! - https://christopherchateau.github.io/cc-comp-challenge-3/
+
 
 ## Comp:
 
