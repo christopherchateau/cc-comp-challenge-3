@@ -867,7 +867,7 @@ h6 {
   padding-left: 12px;
 }
 
-@media screen and (max-width: 1410px) {
+@media screen and (max-width: 1420px) {
 
   .job-description-social--section {
     grid-template-columns: 1fr; 
